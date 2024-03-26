@@ -1,0 +1,11 @@
+C:\FPT\2024 SP\H6187388-Programming\WaterBill\WaterBill\bin\Debug\WaterBill.exe.config
+C:\FPT\2024 SP\H6187388-Programming\WaterBill\WaterBill\bin\Debug\WaterBill.exe
+C:\FPT\2024 SP\H6187388-Programming\WaterBill\WaterBill\bin\Debug\WaterBill.pdb
+C:\FPT\2024 SP\H6187388-Programming\WaterBill\WaterBill\obj\Debug\WaterBill.csproj.AssemblyReference.cache
+C:\FPT\2024 SP\H6187388-Programming\WaterBill\WaterBill\obj\Debug\WaterBill.Form1.resources
+C:\FPT\2024 SP\H6187388-Programming\WaterBill\WaterBill\obj\Debug\WaterBill.Properties.Resources.resources
+C:\FPT\2024 SP\H6187388-Programming\WaterBill\WaterBill\obj\Debug\WaterBill.csproj.GenerateResource.cache
+C:\FPT\2024 SP\H6187388-Programming\WaterBill\WaterBill\obj\Debug\WaterBill.csproj.CoreCompileInputs.cache
+C:\FPT\2024 SP\H6187388-Programming\WaterBill\WaterBill\obj\Debug\WaterBill.exe
+C:\FPT\2024 SP\H6187388-Programming\WaterBill\WaterBill\obj\Debug\WaterBill.pdb
+C:\FPT\2024 SP\H6187388-Programming\WaterBill\WaterBill\obj\Debug\WaterBill.MainForm.resources
