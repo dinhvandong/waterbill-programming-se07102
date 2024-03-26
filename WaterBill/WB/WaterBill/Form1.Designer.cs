@@ -30,23 +30,25 @@
         {
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.txtPeopleCount = new System.Windows.Forms.TextBox();
+            this.cbxManuafacture = new System.Windows.Forms.CheckBox();
+            this.cbxGovernane = new System.Windows.Forms.CheckBox();
+            this.cbxBusinees = new System.Windows.Forms.CheckBox();
+            this.cbxHouseHolde = new System.Windows.Forms.CheckBox();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtName = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtIndexThis = new System.Windows.Forms.TextBox();
+            this.txtIndexLast = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -63,21 +65,23 @@
             // splitContainer1.Panel1
             // 
             this.splitContainer1.Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.splitContainer1.Panel1.Controls.Add(this.button5);
+            this.splitContainer1.Panel1.Controls.Add(this.button4);
             this.splitContainer1.Panel1.Controls.Add(this.label5);
-            this.splitContainer1.Panel1.Controls.Add(this.textBox5);
-            this.splitContainer1.Panel1.Controls.Add(this.checkBox4);
-            this.splitContainer1.Panel1.Controls.Add(this.checkBox3);
-            this.splitContainer1.Panel1.Controls.Add(this.checkBox2);
-            this.splitContainer1.Panel1.Controls.Add(this.checkBox1);
+            this.splitContainer1.Panel1.Controls.Add(this.txtPeopleCount);
+            this.splitContainer1.Panel1.Controls.Add(this.cbxManuafacture);
+            this.splitContainer1.Panel1.Controls.Add(this.cbxGovernane);
+            this.splitContainer1.Panel1.Controls.Add(this.cbxBusinees);
+            this.splitContainer1.Panel1.Controls.Add(this.cbxHouseHolde);
             this.splitContainer1.Panel1.Controls.Add(this.button3);
             this.splitContainer1.Panel1.Controls.Add(this.button2);
             this.splitContainer1.Panel1.Controls.Add(this.button1);
             this.splitContainer1.Panel1.Controls.Add(this.label4);
-            this.splitContainer1.Panel1.Controls.Add(this.textBox4);
+            this.splitContainer1.Panel1.Controls.Add(this.txtName);
             this.splitContainer1.Panel1.Controls.Add(this.label3);
             this.splitContainer1.Panel1.Controls.Add(this.label2);
-            this.splitContainer1.Panel1.Controls.Add(this.textBox3);
-            this.splitContainer1.Panel1.Controls.Add(this.textBox2);
+            this.splitContainer1.Panel1.Controls.Add(this.txtIndexThis);
+            this.splitContainer1.Panel1.Controls.Add(this.txtIndexLast);
             this.splitContainer1.Panel1.Controls.Add(this.label1);
             this.splitContainer1.Panel1.Controls.Add(this.textBox1);
             // 
@@ -98,53 +102,57 @@
             this.label5.TabIndex = 16;
             this.label5.Text = "Số người";
             // 
-            // textBox5
+            // txtPeopleCount
             // 
-            this.textBox5.Location = new System.Drawing.Point(105, 423);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(335, 36);
-            this.textBox5.TabIndex = 15;
+            this.txtPeopleCount.Location = new System.Drawing.Point(105, 423);
+            this.txtPeopleCount.Multiline = true;
+            this.txtPeopleCount.Name = "txtPeopleCount";
+            this.txtPeopleCount.Size = new System.Drawing.Size(335, 36);
+            this.txtPeopleCount.TabIndex = 15;
             // 
-            // checkBox4
+            // cbxManuafacture
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(324, 382);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(80, 20);
-            this.checkBox4.TabIndex = 14;
-            this.checkBox4.Text = "Sản xuất";
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.cbxManuafacture.AutoSize = true;
+            this.cbxManuafacture.Location = new System.Drawing.Point(324, 382);
+            this.cbxManuafacture.Name = "cbxManuafacture";
+            this.cbxManuafacture.Size = new System.Drawing.Size(80, 20);
+            this.cbxManuafacture.TabIndex = 14;
+            this.cbxManuafacture.Text = "Sản xuất";
+            this.cbxManuafacture.UseVisualStyleBackColor = true;
+            this.cbxManuafacture.CheckedChanged += new System.EventHandler(this.cbxManuafacture_CheckedChanged);
             // 
-            // checkBox3
+            // cbxGovernane
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(222, 383);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(86, 20);
-            this.checkBox3.TabIndex = 13;
-            this.checkBox3.Text = "Nhà nước";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.cbxGovernane.AutoSize = true;
+            this.cbxGovernane.Location = new System.Drawing.Point(222, 383);
+            this.cbxGovernane.Name = "cbxGovernane";
+            this.cbxGovernane.Size = new System.Drawing.Size(86, 20);
+            this.cbxGovernane.TabIndex = 13;
+            this.cbxGovernane.Text = "Nhà nước";
+            this.cbxGovernane.UseVisualStyleBackColor = true;
+            this.cbxGovernane.CheckStateChanged += new System.EventHandler(this.cbxGovernane_CheckedChanged);
             // 
-            // checkBox2
+            // cbxBusinees
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(120, 384);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(95, 20);
-            this.checkBox2.TabIndex = 12;
-            this.checkBox2.Text = "Kinh doanh";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.cbxBusinees.AutoSize = true;
+            this.cbxBusinees.Location = new System.Drawing.Point(120, 384);
+            this.cbxBusinees.Name = "cbxBusinees";
+            this.cbxBusinees.Size = new System.Drawing.Size(95, 20);
+            this.cbxBusinees.TabIndex = 12;
+            this.cbxBusinees.Text = "Kinh doanh";
+            this.cbxBusinees.UseVisualStyleBackColor = true;
+            this.cbxBusinees.CheckedChanged += new System.EventHandler(this.cbxBusinees_CheckedChanged);
             // 
-            // checkBox1
+            // cbxHouseHolde
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(8, 385);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(69, 20);
-            this.checkBox1.TabIndex = 11;
-            this.checkBox1.Text = "Hộ GĐ";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.cbxHouseHolde.AutoSize = true;
+            this.cbxHouseHolde.Location = new System.Drawing.Point(8, 385);
+            this.cbxHouseHolde.Name = "cbxHouseHolde";
+            this.cbxHouseHolde.Size = new System.Drawing.Size(69, 20);
+            this.cbxHouseHolde.TabIndex = 11;
+            this.cbxHouseHolde.Text = "Hộ GĐ";
+            this.cbxHouseHolde.UseVisualStyleBackColor = true;
+            this.cbxHouseHolde.CheckedChanged += new System.EventHandler(this.cbxHouseHolde_CheckedChanged);
             // 
             // button3
             // 
@@ -156,6 +164,7 @@
             this.button3.TabIndex = 10;
             this.button3.Text = "Xóa";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -167,6 +176,7 @@
             this.button2.TabIndex = 9;
             this.button2.Text = "Cập nhật";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -178,6 +188,7 @@
             this.button1.TabIndex = 8;
             this.button1.Text = "Thêm";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label4
             // 
@@ -189,13 +200,13 @@
             this.label4.TabIndex = 7;
             this.label4.Text = "Họ tên khách hàng";
             // 
-            // textBox4
+            // txtName
             // 
-            this.textBox4.Location = new System.Drawing.Point(10, 135);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(431, 49);
-            this.textBox4.TabIndex = 6;
+            this.txtName.Location = new System.Drawing.Point(10, 135);
+            this.txtName.Multiline = true;
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(431, 49);
+            this.txtName.TabIndex = 6;
             // 
             // label3
             // 
@@ -217,21 +228,21 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "Chỉ sống công tơ tháng trước";
             // 
-            // textBox3
+            // txtIndexThis
             // 
-            this.textBox3.Location = new System.Drawing.Point(10, 316);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(432, 46);
-            this.textBox3.TabIndex = 3;
+            this.txtIndexThis.Location = new System.Drawing.Point(10, 316);
+            this.txtIndexThis.Multiline = true;
+            this.txtIndexThis.Name = "txtIndexThis";
+            this.txtIndexThis.Size = new System.Drawing.Size(432, 46);
+            this.txtIndexThis.TabIndex = 3;
             // 
-            // textBox2
+            // txtIndexLast
             // 
-            this.textBox2.Location = new System.Drawing.Point(8, 224);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(432, 49);
-            this.textBox2.TabIndex = 2;
+            this.txtIndexLast.Location = new System.Drawing.Point(8, 224);
+            this.txtIndexLast.Multiline = true;
+            this.txtIndexLast.Name = "txtIndexLast";
+            this.txtIndexLast.Size = new System.Drawing.Size(432, 49);
+            this.txtIndexLast.TabIndex = 2;
             // 
             // label1
             // 
@@ -248,7 +259,7 @@
             this.textBox1.Location = new System.Drawing.Point(12, 55);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(432, 42);
+            this.textBox1.Size = new System.Drawing.Size(240, 42);
             this.textBox1.TabIndex = 0;
             // 
             // dataGridView1
@@ -261,6 +272,24 @@
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(918, 772);
             this.dataGridView1.TabIndex = 0;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(258, 55);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(87, 42);
+            this.button4.TabIndex = 17;
+            this.button4.Text = "Tìm kiếm";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(353, 55);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(87, 42);
+            this.button5.TabIndex = 18;
+            this.button5.Text = "Sắp xếp";
+            this.button5.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -287,21 +316,23 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtIndexThis;
+        private System.Windows.Forms.TextBox txtIndexLast;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.TextBox txtPeopleCount;
+        private System.Windows.Forms.CheckBox cbxManuafacture;
+        private System.Windows.Forms.CheckBox cbxGovernane;
+        private System.Windows.Forms.CheckBox cbxHouseHolde;
+        private System.Windows.Forms.CheckBox cbxBusinees;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button4;
     }
 }
 
